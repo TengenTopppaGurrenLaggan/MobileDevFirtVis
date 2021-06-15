@@ -10,12 +10,15 @@ except:
     b=1
 #time.sleep(5)
 a=int(input("input number: "))
-
+numbers = [1, 2, 3, 4, 5, 6, 7]
+evens = [x for x in numbers if x % 2 == 0]
+y = map(lambda evens: evens + 1 , evens)
 print(a)
 print(b)
+print(evens)
 k= dict([(1,a),(2,b)])
 print(k)
-def b(dict ):
+def b(dict):
     def t(dict):
         z=3
         while dict[1]>1 :
@@ -34,4 +37,5 @@ def b(dict ):
         return teta
     return t(dict)
 ent=b(k)
-print(ent)
+beta=ent+sum(evens)
+print(beta)
